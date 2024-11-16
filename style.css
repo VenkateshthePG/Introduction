@@ -1,3 +1,4 @@
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,24 +7,55 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://moewalls.com/games/cypher-x-omen-x-sova-valorant-live-wallpaper/'); /* Use your preferred gaming image URL here */
-    background-size: cover;
-    background-position: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-header {
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+}
+
+/* Header Styling */
+header {
+    margin-top: 50px;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     border-radius: 10px;
+    display: inline-block;
 }
 
 h1 {
     font-size: 3em;
+    color: #ff4081;
 }
 
+/* Sections */
 section {
     padding: 20px;
     margin: 20px auto;
@@ -35,7 +67,8 @@ section {
 }
 
 h2 {
-    color: #ff4081; /* A vibrant color to match the gaming vibe */
+    color: #ff4081;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -46,6 +79,7 @@ li {
     padding: 10px 0;
 }
 
+/* Button Styling */
 button {
     padding: 10px 15px;
     background-color: #ff4081;
