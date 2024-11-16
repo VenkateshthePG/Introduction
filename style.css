@@ -1,40 +1,29 @@
-
 /* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: black; /* Set background to black */
+    font-family: 'Baufra', Arial, sans-serif; /* Use Baufra font */
+    background-color: black; /* Set the background color to black */
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds subtle text shadow */
 }
 
 /* Header Styling */
 header {
-    margin-top: 50px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
+    margin-top: 50px;
 }
 
 h1 {
-    font-size: 4em; /* Increase title size */
-    color: #fbffff; /* Vibrant color for title */
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.2em;
+    font-size: 5em; /* Larger title */
+    color: white; /* Title color */
+    text-transform: uppercase; /* Makes the title uppercase */
+    margin-bottom: 20px;
 }
 
 /* Sections */
@@ -43,24 +32,26 @@ section {
     margin: 20px auto;
     width: 80%;
     max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent box for content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
+    color: #fff;
+    background: none; /* Removes the section box */
+    box-shadow: none; /* Removes any shadow from sections */
 }
 
+/* Section Titles */
 h2 {
-    color: #fbffff;
+    color: #ff4081; /* Vibrant color for section titles */
     margin-bottom: 15px;
-    font-size: 2em;
+    text-align: center;
 }
 
+/* List Items */
 ul {
     list-style: none;
+    text-align: center;
 }
 
 li {
     padding: 10px 0;
-    font-size: 1.1em;
 }
 
 /* Button Styling */
@@ -78,8 +69,12 @@ button:hover {
     background-color: #f50057;
 }
 
-/* Message Styling */
 #message {
     margin-top: 10px;
     font-style: italic;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
