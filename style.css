@@ -8,12 +8,33 @@
 
 body {
     font-family: 'Baufra', Arial, sans-serif; /* Use Baufra font */
-    background-color: black; /* Set the background color to black */
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds subtle text shadow */
+    overflow: hidden; /* Prevent scrollbars from appearing due to the video */
 }
 
-/* Header Styling */
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* Content Styling */
 header {
     text-align: center;
     margin-top: 50px;
@@ -33,18 +54,16 @@ section {
     width: 80%;
     max-width: 600px;
     color: #fff;
+    text-align: center;
     background: none; /* Removes the section box */
     box-shadow: none; /* Removes any shadow from sections */
 }
 
-/* Section Titles */
 h2 {
     color: #ff4081; /* Vibrant color for section titles */
     margin-bottom: 15px;
-    text-align: center;
 }
 
-/* List Items */
 ul {
     list-style: none;
     text-align: center;
@@ -72,9 +91,4 @@ button:hover {
 #message {
     margin-top: 10px;
     font-style: italic;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
 }
