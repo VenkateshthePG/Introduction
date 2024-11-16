@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://your-background-image-url.com'); /* Use your preferred gaming image URL here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #ff4081; /* A vibrant color to match the gaming vibe */
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f50057;
+}
+
+#message {
+    margin-top: 10px;
+    font-style: italic;
+}
